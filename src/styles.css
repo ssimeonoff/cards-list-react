@@ -1,0 +1,71 @@
+/* fonts */
+@font-face {
+  font-family: Prototype;
+  src: url(./fonts/Prototype.ttf);
+}
+
+body {
+  background-color: #1c2022;
+}
+
+.borders {
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #888;
+  border-bottom: 2px solid #888;
+}
+.buttons-container {
+  width: 550px;
+  background: linear-gradient(to right bottom, #ccc, #fff, #bbb, #ddd);
+  border-radius: 24px;
+}
+
+.buttons-container-header {
+  height: 45px;
+  border-radius: 20px 20px 0 0;
+}
+.buttons-container-footer {
+  height: 30px;
+  border-radius: 0 0 20px 20px;
+}
+
+.buttons-container-body {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
+  gap: 5px;
+  padding: 10px;
+  padding-left: 18px;
+}
+
+.button {
+  cursor: pointer;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px 1px;
+}
+
+.button ::hover {
+  filter: brightness(120%);
+}
+
+.button-active {
+  border: 2px solid #888;
+  box-shadow: inset 0px 1px 2px 1px #444;
+  transform: translateY(2px);
+}
+
+.title {
+  font-family: Prototype;
+  transform: scale(1.5, 1);
+  font-size: 26px;
+  margin-left: 140px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  text-shadow: 0px 2px 1px rgba(245, 245, 245, 0.5);
+  color: transparent;
+  background: #222;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}
